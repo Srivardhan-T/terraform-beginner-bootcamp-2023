@@ -24,3 +24,13 @@ output "random_bucket_name" {
 output random_bucket_name_id {
     value = random_string.bucket_name.id
 }
+
+
+resource "aws_s3_bucket" "example" {
+  bucket = "random_string.bucket_name.result"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
