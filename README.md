@@ -18,3 +18,28 @@ The General Formt **MAJOR.MINOR.PATCH**, eg. 1.0.1
 ##Install the Terrform installation
 
 [Install Teffaform CLI](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+
+
+###Terraform sources thier providers from below place
+
+Terraform registry
+[](https://registry.terraform.io/)
+
+**Providers**
+
+**modules** 
+
+
+`terraform plan`
+
+`terraform apply`
+
+###Terraform lpock files
+
+
+###Terraform state files
+tf.state contains information about the current state of infrastructure. this should not be committed to you version control system. This file can contains sensitive data. If you loos this file, you lose knowing the state of your infrstructure.
+
+
+Terraform Directory
+IF we want 
